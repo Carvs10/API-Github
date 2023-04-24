@@ -2,6 +2,8 @@ import React from "react";
 
 import { Container, Sidebar, Main } from "./styles";
 
+import { getLangsFrom } from "../../services/api";
+
 import Profile from "./Profile";
 import Filter from "./Filter";
 import Repositories from "./Repositories";
@@ -47,7 +49,7 @@ function RepositoriesPage() {
       name: "Repo 5",
       description: "Template básico para projetos ReactJS",
       html_url: "https://devsamurai.com.br",
-      language: "Java",
+      language: "TypeScript",
     },
     {
       name: "Repo 6",
@@ -57,18 +59,7 @@ function RepositoriesPage() {
     },
   ];
 
-  const stats = repositories.map((repository) => repository.language);
-  // .reduce((data, lan))
-
-  console.log(stats);
-
-  // Calculo de filters
-  const languages = [
-    { name: "Javascript", count: 3, color: "#FCC419" },
-    { name: "Shell", count: 2, color: "#CED4DA" },
-    { name: "PHP", count: 2, color: "#25BEFF" },
-    { name: "Ruby", count: 1, color: "#e74c3c" },
-  ];
+  const languages = getLangsFrom(repositories);
 
   return (
     <Container>
