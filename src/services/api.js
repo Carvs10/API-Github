@@ -1,6 +1,5 @@
 import axios from "axios";
-// eslint-disable-next-line import/no-named-as-default
-import langColors from "./config";
+import { langColors } from "./config";
 
 const api = axios.create({
   baseURL: process.env.REACT_APP_API_BASE_URL,

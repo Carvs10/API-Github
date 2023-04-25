@@ -13,5 +13,3 @@ export const langColors = {
   "c#": "#27ae60",
   "c++": "#7f8c8d",
 };
-
-export default langColors;
