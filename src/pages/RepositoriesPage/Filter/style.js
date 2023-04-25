@@ -37,7 +37,7 @@ export const Selector = styled.button`
   }
 
   @media screen and (max-width: 768px){
-    border-radius: 20px;;
+    border-radius: 20px;
     
     &:hover,
     &.selected {
