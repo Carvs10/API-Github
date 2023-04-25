@@ -1,4 +1,5 @@
 import axios from "axios";
+// eslint-disable-next-line import/no-named-as-default
 import langColors from "./config";
 
 const api = axios.create({
