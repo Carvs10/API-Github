@@ -15,7 +15,7 @@ function Repository({ repository }) {
       <Description>{repository.description}</Description>
       <Footer color={color}>
         <Lang>{repository.language}</Lang>
-        <Link href={repository.hmtl_url} target="_blank">
+        <Link href={repository.html_url} target="_blank">
           Ver
         </Link>
       </Footer>
@@ -28,7 +28,7 @@ Repository.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    hmtl_url: PropTypes.string.isRequired,
+    html_url: PropTypes.string.isRequired,
     language: PropTypes.string,
   }).isRequired,
 };
